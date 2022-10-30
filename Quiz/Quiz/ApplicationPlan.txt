@@ -1,0 +1,14 @@
+﻿1. Wyświetlić ekran powitalny (zasady ...)
+2. Naciśnij ENTER żeby zobaczyć pierwsze pytanie.
+3. Tworzenie bazy wszystkich 583 pytań.
+4. Ustawić kategorię pytania na najniższą możliwą (100 pkt).
+5. Losowanie pytania z aktualnej kategorii.
+6. Wyświetlanie pytania.
+7. Pobranie odpowiedzi od użytkownika.
+8. Walidacja odpowiedzi użytkownika.
+=> NIEDOBRA => 9. Plansza GAME OVER
+=> DOBRA => 9.Sprawdzamy czy to nie była ostatnia kategoria
+			=> TAK => 10. Plansza GRATULACJE WYGRAŁEŚ/AŚ QUIZ GAME OVER
+			=> NIE => 10. Plansza DOBRA ODPOWIEDŹ
+					  11. Podnieść kategorię na nastepną
+					  12. Wracamy do pkt 5.
