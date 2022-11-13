@@ -1,6 +1,6 @@
-﻿1. Wyświetlić ekran powitalny (zasady ...)
+﻿1. Wyświetlić ekran powitalny (zasady ...) => OK.
 2. Naciśnij ENTER żeby zobaczyć pierwsze pytanie.
-3. Tworzenie bazy wszystkich 583 pytań.
+3. Tworzenie bazy wszystkich 755 pytań.
 4. Ustawić kategorię pytania na najniższą możliwą (100 pkt).
 5. Losowanie pytania z aktualnej kategorii.
 6. Wyświetlanie pytania.
