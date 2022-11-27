@@ -15,6 +15,8 @@ namespace Quiz
             Console.WriteLine("Spróbuj odpowiedzieć n a7 pytań");
             Console.WriteLine("POWODZENIA !!!!");
             Console.WriteLine();
+            Console.Write("Naciśnij ENTER, aby rozpocząć grę ...");
+            Console.ReadLine();
         }
     }
 }

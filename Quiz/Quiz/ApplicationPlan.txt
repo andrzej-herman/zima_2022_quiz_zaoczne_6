@@ -1,8 +1,8 @@
 ﻿1. Wyświetlić ekran powitalny (zasady ...) => OK.
-2. Naciśnij ENTER żeby zobaczyć pierwsze pytanie.
-3. Tworzenie bazy wszystkich 755 pytań.
-4. Ustawić kategorię pytania na najniższą możliwą (100 pkt).
-5. Losowanie pytania z aktualnej kategorii.
+2. Naciśnij ENTER żeby zobaczyć pierwsze pytanie. => OK
+3. Tworzenie bazy wszystkich 755 pytań. => OK
+4. Ustawić kategorię pytania na najniższą możliwą (100 pkt). => OK
+5. Losowanie pytania z aktualnej kategorii. 
 6. Wyświetlanie pytania.
 7. Pobranie odpowiedzi od użytkownika.
 8. Walidacja odpowiedzi użytkownika.
