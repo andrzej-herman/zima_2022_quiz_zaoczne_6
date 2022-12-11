@@ -1,34 +1,5 @@
 ﻿using Quiz;
 
-//for (int licznik = 102; licznik < 100; licznik++)
-//{
-//    Console.WriteLine(licznik);
-//}
-
-//foreach (var xxxx in names)
-//{
-//    Console.WriteLine(xxxx);
-//}
-
-//short x = 0;
-//while (true)
-//{
-//    Console.WriteLine(x);
-//    if (x == 100) break;
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -44,20 +15,11 @@ message.DisplayWelcomeScreen();
 // losowanie pytania z aktualnej kategorii
 game.GetQuestion();
 
+// wyświetlamy pytanie graczowi i pobieramy jego odpowiedz
+int playerAnswer = game.CurrentQuestion.DisplayQuestion();
 
-Console.WriteLine(game.CurrentQuestion.Content);
-
-
-
-
-
-
-
-
-
+// następne zajęcia => walidacja ospowiedzi gracza ...
 
 
 Console.WriteLine();
-
-
-
+Console.WriteLine(playerAnswer);

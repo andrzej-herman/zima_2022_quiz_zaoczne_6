@@ -31,17 +31,19 @@ namespace Quiz
 
         public void GetQuestion()
         {
-            var qC = new List<Question>();
-            foreach (var q in Questions)
-            {
-                if (q.Category == CurrentCategory)
-                {
-                    qC.Add(q);
-                }          
-            }
-
+            var qC = Questions.Where(x => x.Category == CurrentCategory).ToList();
             var number = Random.Next(0, qC.Count);
-            CurrentQuestion = qC[number];
+            var question = qC[number];
+            question.Answers = question.Answers.OrderBy(x => Random.Next()).ToList();
+
+            int order = 1;
+            foreach (var answer in question.Answers)
+            {
+                answer.Order = order;
+                order++;
+            }
+            
+            CurrentQuestion = question;
         }
     }
 }

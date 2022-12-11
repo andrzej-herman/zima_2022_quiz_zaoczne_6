@@ -10,6 +10,7 @@ namespace Quiz
     {
         public void DisplayWelcomeScreen()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
             Console.WriteLine("WITAJ W QUZIE WIEDZY GRUPY 6");
             Console.WriteLine("Spróbuj odpowiedzieć n a7 pytań");

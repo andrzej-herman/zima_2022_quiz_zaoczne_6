@@ -2,8 +2,8 @@
 2. Naciśnij ENTER żeby zobaczyć pierwsze pytanie. => OK
 3. Tworzenie bazy wszystkich 755 pytań. => OK
 4. Ustawić kategorię pytania na najniższą możliwą (100 pkt). => OK
-5. Losowanie pytania z aktualnej kategorii. 
-6. Wyświetlanie pytania.
+5. Losowanie pytania z aktualnej kategorii. => OK
+6. Wyświetlanie pytania. => OK
 7. Pobranie odpowiedzi od użytkownika.
 8. Walidacja odpowiedzi użytkownika.
 => NIEDOBRA => 9. Plansza GAME OVER
@@ -12,3 +12,23 @@
 			=> NIE => 10. Plansza DOBRA ODPOWIEDŹ
 					  11. Podnieść kategorię na nastepną
 					  12. Wracamy do pkt 5.
+
+
+
+--------------------------------------------------
+
+var numbers = new List<int>();
+numbers.Add(45);
+numbers.Add(678);
+numbers.Add(12);
+numbers.Add(45);
+numbers.Add(78);
+numbers.Add(2);
+numbers.Add(141);
+numbers.Add(14);
+numbers.Add(93);
+
+var number = numbers.OrderBy(x => x).FirstOrDefault(x => x > 1);
+
+
+Console.WriteLine(number);
