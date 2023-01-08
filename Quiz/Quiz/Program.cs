@@ -12,14 +12,39 @@ var message = new Message();
 // wyświetlanie ekranu powitalnego
 message.DisplayWelcomeScreen();
 
-// losowanie pytania z aktualnej kategorii
-game.GetQuestion();
+while(true)
+{
+    // losowanie pytania z aktualnej kategorii
+    game.GetQuestion();
 
-// wyświetlamy pytanie graczowi i pobieramy jego odpowiedz
-int playerAnswer = game.CurrentQuestion.DisplayQuestion();
+    // wyświetlamy pytanie graczowi i pobieramy jego odpowiedz
+    int playerAnswer = game.CurrentQuestion.DisplayQuestion();
 
-// następne zajęcia => walidacja ospowiedzi gracza ...
+    // walidacja ospowiedzi gracza ...
+    // w zmiennej correct przechowujemy informację czy gracz odpowiedział poprawnie
+    bool correct = game.IsCorrectAnswer(playerAnswer);
+
+    if (correct)
+    {
+        if (game.IsLastCategory())
+        {
+            // ostatnie pytanie
+            message.FinalScreen();
+            break;
+        }
+        else
+        {
+            message.GoodAnswer();
+        }
+    }
+    else
+    {
+        message.QuizFail();
+        break;
+    }
+
+    Console.WriteLine();
+    Console.WriteLine(playerAnswer);
+}
 
 
-Console.WriteLine();
-Console.WriteLine(playerAnswer);

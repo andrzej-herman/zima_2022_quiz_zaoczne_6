@@ -12,7 +12,7 @@ namespace Quiz
         public int Category { get; set; }
         public string Content { get; set; }
         public List<Answer> Answers { get; set; }
-
+      
 
         void ShowQuestion()
         {
@@ -31,6 +31,7 @@ namespace Quiz
 
         public int DisplayQuestion()
         {
+            Console.Clear();
             ShowQuestion();
             var playerAnswer = Console.ReadLine();
             bool isCorrectKey = IsCorrectKey(playerAnswer);
